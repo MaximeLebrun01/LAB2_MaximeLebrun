@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GestionJeu : MonoBehaviour
 {
@@ -28,8 +29,12 @@ public class GestionJeu : MonoBehaviour
 
     private static void Instructions()
     {
-        Debug.Log("*** Course à obstacle *** \n Atteindre la fin du parcours le plus rapidement possible");
-        Debug.Log("Chaque obstacle qui sera touché entraînera une pénalité");
+        int indexScene = SceneManager.GetActiveScene().buildIndex;
+        if (indexScene == 0)
+        {
+            Debug.Log("*** Course à obstacle *** \n Atteindre la fin du parcours le plus rapidement possible");
+            Debug.Log("Chaque obstacle qui sera touché entraînera une pénalité");
+        }
     }
 
     // Méthode plublic

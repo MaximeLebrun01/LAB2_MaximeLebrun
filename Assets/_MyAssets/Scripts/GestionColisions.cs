@@ -22,7 +22,17 @@ public class GestionColisions : MonoBehaviour
                 gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
                 _gestionJeu.AugmenterPointage();
                 _touche = true;
+                if(gameObject.tag == "4Seconde")
+                        StartCoroutine(Wait4());
             }
         }
+    }
+    IEnumerator Wait4()
+    {
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(4);
+
+        gameObject.GetComponent<MeshRenderer>().material.color = Color.white;
+        _touche = false;
     }
 }

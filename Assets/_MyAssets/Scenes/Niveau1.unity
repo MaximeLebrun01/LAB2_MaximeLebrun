@@ -485,6 +485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mur (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8339611656605046104, guid: 77452548fd1a8764aa428d439c71bdf1, type: 3}
+      propertyPath: m_TagString
+      value: 4Seconde
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77452548fd1a8764aa428d439c71bdf1, type: 3}
 --- !u!4 &505339029 stripped
@@ -574,7 +578,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5e9ef0edc5d4a4346a240f9932616550, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
